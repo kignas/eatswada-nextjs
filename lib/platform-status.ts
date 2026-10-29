@@ -21,7 +21,7 @@
 import { CONFIG } from "./config";
 
 const BASE =
-  CONFIG.API_BASE_URL || "https://api.eatswada.com/api";
+  CONFIG.API_BASE_URL || "https://eatswada.onrender.com/api";
 const ENDPOINTS = ["/platform/public-status"]; // public, customer-safe snapshot (GET /platform/settings is admin-only)
 export const PLATFORM_CACHE_KEY = "eatswada_platform_settings_v2";
 const CACHE_MS = 60 * 1000;

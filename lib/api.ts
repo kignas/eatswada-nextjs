@@ -11,7 +11,7 @@
    ================================================================ */
 import { CONFIG } from "./config";
 
-const BASE = CONFIG.API_BASE_URL || "https://api.eatswada.com/api";
+const BASE = CONFIG.API_BASE_URL || "https://eatswada.onrender.com/api";
 
 const DEFAULT_TIMEOUT_MS = 12000;
 

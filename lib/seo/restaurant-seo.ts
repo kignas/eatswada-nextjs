@@ -31,7 +31,7 @@ function envApiBase(): string | undefined {
   }
 }
 
-export const API_BASE = envApiBase() || "https://api.eatswada.com/api";
+export const API_BASE = envApiBase() || "https://eatswada.onrender.com/api";
 export const CANONICAL_ORIGIN = "https://eatswada.com";
 
 /** Legacy id validation regex. */

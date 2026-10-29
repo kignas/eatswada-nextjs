@@ -13,7 +13,7 @@
 import { CONFIG } from "./config";
 
 const API = String(
-  CONFIG.API_BASE_URL || "https://api.eatswada.com/api"
+  CONFIG.API_BASE_URL || "https://eatswada.onrender.com/api"
 ).replace(/\/$/, "");
 const MIN = 2;
 

@@ -14,7 +14,7 @@ function readBool(value: string | undefined, fallback: boolean): boolean {
 
 export const CONFIG = {
   API_BASE_URL:
-    process.env.NEXT_PUBLIC_API_BASE_URL || "https://api.eatswada.com/api",
+    process.env.NEXT_PUBLIC_API_BASE_URL || "https://eatswada.onrender.com/api",
   BRAND_NAME: process.env.NEXT_PUBLIC_BRAND_NAME || "EatSwada",
   MAPTILER: {
     enabled: readBool(process.env.NEXT_PUBLIC_MAPTILER_ENABLED, true),

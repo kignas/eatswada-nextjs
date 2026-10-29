@@ -52,7 +52,7 @@ const DARK_BG_RULE = `html[data-ew-theme="dark"]{background:#181A1B}html[data-ew
 const FONT_LINKS: Array<React.ComponentProps<"link">> = [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-  { rel: "preconnect", href: "https://api.eatswada.com", crossOrigin: "anonymous" },
+  { rel: "preconnect", href: "https://eatswada.onrender.com", crossOrigin: "anonymous" },
   { rel: "preconnect", href: "https://cdnjs.cloudflare.com" },
   {
     rel: "stylesheet",
