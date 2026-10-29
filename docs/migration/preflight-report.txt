@@ -1,0 +1,46 @@
+EatSwada preflight — 2026-10-29T06:16:51.503Z
+repo root: /workspace/project/Nearbite
+zip: deliverables/eatswada-web-phase-5a.zip
+
+PASS  STRAY (tree)  — clean
+SECRETS allow-list: public Firebase web apiKey AIzaSyA0bqVE3RCmiJORcufx-v6Gew16GMCfFp0
+PASS  SECRETS  — no JWTs / rzp_live keys / real emails / phones / Bearer tokens / private keys (tree + zip)
+PASS  SHARED  — 124 files byte-identical
+PASS  PORTED  — PORTED_PAGES = ["/", "/search", "/category", "/under99", "/restaurant-shell", "/cart", "/payment-success", "/payment-failed", "/payment-pending", "/about", "/faq", "/terms", "/refund-policy", "/legal", "/delivery-areas-and-charges", "/food-delivery-in-maynaguri", "/partner-rules", "/login", "/forgot-password", "/reset-password", "/complete-profile", "/location-onboarding", "/profile", "/address", "/address-new", "/orders", "/track-order", "/partner-with-us", "/apply", "/application-status", "/support", "/order-help", "/order-support", "/rate-us", "/storage-check", "/privacy-data"]
+PASS  COVERAGE  — COVERAGE: 36 ported, 4 explained exception(s), 0 unexplained
+      POST web/lib/address-api.ts:56  return request("/users/addresses", { method: "POST", body: JSON.stringify(data) });
+      PUT web/lib/address-api.ts:61  method: "PUT",
+      PATCH web/lib/address-api.ts:71  return request("/users/addresses/" + encodeURIComponent(id) + "/default", { method: "PATCH
+      DELETE web/lib/address-api.ts:75  return request("/users/addresses/" + encodeURIComponent(id), { method: "DELETE" });
+      POST web/lib/cart-page-order.ts:642  method: "POST",
+      POST web/lib/complete-profile.ts:243  method: "POST",
+      PUT web/lib/complete-profile.ts:270  method: "PUT",
+      POST web/lib/customer-upload.ts:62  return fetch(base + path, { method: "POST", headers: t ? { Authorization: "Bearer " + t } 
+      POST web/lib/ew-payment-verify.ts:128  method: "POST",
+      POST web/lib/forgot-password.ts:83  method: "POST",
+      POST web/lib/login-page.ts:153  method: "POST",
+      POST web/lib/login-page.ts:385  method: "POST",
+      POST web/lib/login-page.ts:489  method: "POST",
+      POST web/lib/login-page.ts:529  method: "POST",
+      POST web/lib/login-page.ts:554  method: "POST",
+      POST web/lib/login-page.ts:594  method: "POST",
+      POST web/lib/order-support-page.ts:70  var res = await a.api.call("/support/tickets", { method: "POST", body: body });
+      POST web/lib/order-support-page.ts:85  method: "POST",
+      POST web/lib/orders-page.ts:344  method: "POST",
+      POST web/lib/payment-failed.ts:111  method: "POST",
+      POST web/lib/payment-failed.ts:189  method: "POST",
+      POST web/lib/privacy-data-page.ts:92  var out = await request("/privacy/requests", { method: "POST", body: JSON.stringify({ type
+      PUT web/lib/privacy-data-page.ts:154  await request("/privacy/me/nominee", { method: "PUT", body: JSON.stringify(payload) });
+      DELETE web/lib/privacy-data-page.ts:167  await request("/privacy/me/nominee", { method: "DELETE" });
+      DELETE web/lib/privacy-data-page.ts:192  await request("/privacy/me", { method: "DELETE", body: JSON.stringify({ confirmation: "DEL
+      PUT web/lib/profile-page.ts:209  method: "PUT",
+      POST web/lib/push.ts:50  method: "POST",
+      POST web/lib/rate-us-page.ts:127  method: "POST",
+      PUT web/lib/track-order-page.ts:859  method: "PUT",
+      POST web/lib/track-order-page.ts:1027  method: "POST",
+PASS  NOWRITE  — 30 write call(s), all on the allow-list
+PASS  ZIPNAME  — eatswada-web-phase-5a.zip: 456 files
+PASS  GIT  — no git commands in tools/ or scripts/
+PASS  PROGRESS  — newest entry "## 2026-10-29 Task: Phase 5a — deploy readiness (no page cha" is 60 lines (limit 60)
+
+SUMMARY: ALL 9 CHECKS PASS
