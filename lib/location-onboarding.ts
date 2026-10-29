@@ -578,7 +578,7 @@ export function showPresetPoint(pt: any): void {
 }
 
 export async function checkBackendServiceability(lat: number, lng: number): Promise<any> {
-  const base = (w.CONFIG && w.CONFIG.API_BASE_URL) || "https://eatswada.onrender.com/api";
+  const base = (w.CONFIG && w.CONFIG.API_BASE_URL) || "https://api.eatswada.com/api";
   const qs = new URLSearchParams({ lat: String(lat), lng: String(lng) });
   const response = await fetch(base + "/restaurants/serviceability?" + qs.toString(), {
     headers: { Accept: "application/json" },

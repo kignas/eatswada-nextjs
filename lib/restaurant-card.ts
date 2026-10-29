@@ -13,7 +13,7 @@ import { safeUrl, foodPlaceholderMarkup } from "./safe-html";
 import { CONFIG } from "./config";
 
 const API_BASE = String(
-  CONFIG.API_BASE_URL || "https://eatswada.onrender.com/api"
+  CONFIG.API_BASE_URL || "https://api.eatswada.com/api"
 ).replace(/\/$/, "");
 
 function browser(): boolean {

@@ -7,8 +7,8 @@
    ===================================================================== */
 import { U99Icons } from "./under99-icons";
 
-const API = "https://eatswada.onrender.com/api/restaurants/under99";
-const HERO_API = "https://eatswada.onrender.com/api/home-banners?placement=under99";
+const API = "https://api.eatswada.com/api/restaurants/under99";
+const HERO_API = "https://api.eatswada.com/api/home-banners?placement=under99";
 const CART_KEY = "nearbite_cart";
 
 export interface Under99State {

@@ -18,7 +18,7 @@ export function installHomeBanners(): void {
   if (!browser()) return;
 
   const API_BASE = String(
-    CONFIG.API_BASE_URL || "https://eatswada.onrender.com/api"
+    CONFIG.API_BASE_URL || "https://api.eatswada.com/api"
   ).replace(/\/$/, "");
 
   const header: any = document.getElementById("home-header");

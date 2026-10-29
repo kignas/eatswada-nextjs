@@ -21,7 +21,7 @@ export function installPrivacyDataPage(): void {
   w.__nearbitePrivacyData = true;
 
   "use strict";
-  var BASE = (window as any).CONFIG && (window as any).CONFIG.API_BASE_URL ? (window as any).CONFIG.API_BASE_URL : "https://eatswada.onrender.com/api";
+  var BASE = (window as any).CONFIG && (window as any).CONFIG.API_BASE_URL ? (window as any).CONFIG.API_BASE_URL : "https://api.eatswada.com/api";
   function token() {
     return localStorage.getItem("nearbite_token") || localStorage.getItem("token") || "";
   }
